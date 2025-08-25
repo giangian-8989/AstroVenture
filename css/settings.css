@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Jersey10';
+    src: url(../assets/font/Jersey10-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'Jersey10', sans-serif;
+    color: #5F39AF;
+    text-shadow: 5px 3px 0px #868286;
+
+}
+h1{
+    font-size: 50px;
+    color: #5F39AF;
+    text-align: lefts;
+}
+body{
+    background: url(../assets/background.png) no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.panel{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(227, 231, 244, 0.6);
+    width: 25%;
+    height: 92%;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    overflow: hidden;;
+}
+.panel button{
+    font-size: 50px;
+    opacity: 1;
+    width: 80%;
+    height: 60px;
+    border-radius: 20px;
+    border: 3px solid black;
+    background-color: #E3E7F4;
+    line-height: 0.2;
+    margin: 8%;
+}
+.panel-right{
+    left: 73%;
+
+}
+.panel-header{
+    background-color: rgba(227, 231, 244, 1.0);
+    top: 10%;
+    left: 5%;
+    width: 20%;
+    height:10%;
+}
+.panel-content{
+    top: 58%;
+    left: 5%;
+    background-color: rgba(227, 231, 244, 1.0);
+    width: 60%;
+    height: 75%;
+    overflow-y: auto;
+}
+/* changes on hover */
+.panel button:hover{
+    background-color: #8F00FF ;
+    text-shadow: 5px 3px 0px #333;
+    transition: 0.3
+}
+.panel-content p, pre{
+    color: #000;
+    line-height: 2;
+    font-size: 30px;
+    padding: 5%;
+    text-align: left;
+    text-shadow: 0px 0px 0px #FFF;
+}
+/* .panel-content pre{
+    color: #000;
+    line-height: 1;
+    font-size: 30
+} */
+.panel-content::-webkit-scrollbar{
+    width: 1px;
+    height: 60%;
+ }
+.hidden{
+    display: none;
+ }
+ #mechanics p, pre{
+    margin-top: 180%;
+ }

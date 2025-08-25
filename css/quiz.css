@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Jersey10';
+    src: url(../assets/font/Jersey10-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'Jersey10', sans-serif;
+    color: #5F39AF;
+    text-shadow: 5px 3px 0px #868286;
+
+}
+body{
+    background: url(../assets/background.png) no-repeat;
+    margin: 0;;
+}
+
+.panel-quiz{
+    font-size: 28px;
+    width: 20%;
+    height: 30%;
+    border-radius: 30px;
+    position: absolute;
+    top: 40%;
+    left: 28%;
+    background-color: rgba(227, 231, 244, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.panel-quiz img {
+    margin-top: 0;
+    max-width: 150px;   /* or any size you prefer */
+    width: 100%;
+    height: auto;
+    display: inline;
+    margin: 0 auto;
+}
+.panel-quiz-right{
+    left: 53%;
+}
+.difficulty-tab{
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    top: 13%;
+    left: 35%;
+    width: 30%;
+    height: 75%;
+    padding: 0;
+}
+
+.difficulty-tab button{
+    font-size: 50px;
+    opacity: 1;
+    width: 80%;
+    height: 60px;
+    border-radius: 20px;
+    border: 3px solid black;
+    background-color: #E3E7F4;
+    line-height: 0.2;
+    margin: 5%;
+}
