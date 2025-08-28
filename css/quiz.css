@@ -61,4 +61,31 @@ body{
     background-color: #E3E7F4;
     line-height: 0.2;
     margin: 5%;
+
+  .key {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            margin: 5px;
+            text-align: center;
+            background: #f0f0f0;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+
+    
+}
+
+.difficulty-tab button:hover{
+    background-color: #8F00FF ;
+    text-shadow: 5px 3px 0px #333;
+    transition: 0.3
+}
+img{
+    float: right;
+    margin-right: 10px;
 }
