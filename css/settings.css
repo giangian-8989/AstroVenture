@@ -7,10 +7,14 @@
 
 *{
     font-family: 'Jersey10', sans-serif;
-    color: #5F39AF;
-    text-shadow: 5px 3px 0px #868286;
+    
 
 }
+.shadow{
+    color: #5F39AF;
+    text-shadow: 5px 3px 0px #868286;
+}
+
 h1{
     font-size: 50px;
     color: #5F39AF;
@@ -98,3 +102,19 @@ body{
  #mechanics p, pre{
     margin-top: 180%;
  }
+
+ .panel-content img{
+    max-width: 300px;
+    max-height: 300px;
+    float: left;
+    margin: 70px;;
+ }
+ .panel-content input[type=range]{ -webkit-appearance: none;
+    border-radius: 10px;
+    width: 300px;
+}
+.panel-content h2{
+    margin-top: 0;
+    font-size: 30px;
+    text-align: left;
+}

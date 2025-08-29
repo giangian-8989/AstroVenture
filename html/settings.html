@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/settings.css">
-    <script src="../javascript/settings.js"></script>
+ 
     <title>Document</title>
 </head>
 <body>
     <div class="panel panel-right">
-        <button onclick="show()">About</button>
-        <button onclick="showMechanics()">Mechanics</button>
-        <button>Controls</button>
-        <button>Volume</button>
-        <button>Back</button>
+        <button class="shadow" onclick="show()">About</button>
+        <button class="shadow" onclick="showMechanics()">Mechanics</button>
+        <button class="shadow" onclick="showControls()">Controls</button>
+        <button class="shadow" onclick="showVolumes()">Volume</button>
+        <button class="shadow">Back</button>
     </div>
-    <div class="panel panel-header hidden"  id="about-header">
+    <div class="panel panel-header shadow hidden"  id="about-header">
         <h1>About</h1>
     </div>
-    <div class="panel panel-content hidden" id="about">
+    <div class="panel panel-content hidden" id="about-content">
         <p>AstroVenture is a fun and interactive educational game designed for Grade 9 
             students to explore and learn about Space Science. Pilot your own rocket ship 
             across a galaxy filled with stars, comets, planets, and galaxies. Along the way, 
@@ -26,10 +26,10 @@
             gravity—while flying through space and having fun. I, Jett Nova will assist
             you!</p>
     </div>
-    <div class="panel panel-header hidden" id="mechanics-header">
+    <div class="panel panel-header shadow hidden" id="mechanics-header">
         <h1>Mechanics</h1>
     </div>
-    <div class="panel panel-content hidden" id="mechanics">
+    <div class="panel panel-content hidden" id="mechanics-content">
         <p>Launch Mission <br>
             1. Control Your Ship
             <br>
@@ -65,11 +65,28 @@
             	-A preview of the questions and the correct answers will be provided. <br>
 
         </p>
-        </div>
-       <div class="panel panel-header" id="Controls">Controls</div>
-       
-    <div class="panel panel-content">
-        <img src="../assets/WASD.png" alt="../assets/UDLR.png">
     </div>
+    <div class="panel panel-header shadow hidden" id="controls-header">
+        <h1>Controls</h1>
+    </div>
+    <div class="panel panel-content hidden" id="controls-content">
+        <div >
+        <img src="../assets/WASD.png" alt="an image of Up Down Left and Right keys">
+        <img src="../assets/UDLR.png" alt="an image of W, A, S, D keys">
+        </div>
+        <p>Use W, A, S, D keys and Up, Down, Left, and Right Keys to move around.</p>
+    </div>
+    <div class="panel panel-header shadow" id="volumes-header">
+        <h1>Volumes</h1>
+    </div>
+    <div class="panel panel-content" id="volumes-content">
+        <h2 class="shadow">Music</h2>
+        <input type="range" value="50" name="music" id="music">
+        <h2 class="shadow">Sound</h2>
+        <input type="range" value="50" name="sound" id="sound">
+    </div>
+
+    
+       <script type="module" src="../javascript/settings.js"></script>
 </body>
 </html>
